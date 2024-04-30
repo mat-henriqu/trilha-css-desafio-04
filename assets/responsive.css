@@ -1,0 +1,130 @@
+@import url('style.css');
+
+/* iPad Mini */
+
+@media screen and (min-width:768px) {
+  .header-content {
+    max-width: 765px;
+    gap: 1.5em;
+    padding: 95px 0 90px;
+    margin: auto;
+    place-items: center;
+    place-content: center;
+  }
+
+  .header-content h1 {
+    font-size: 3em;
+    width: 300px;
+    text-align: center;
+  }
+
+  .header-content p {
+    text-align: center;
+  }
+
+  .button-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+
+  .button-content .black:hover {
+    color: var(--fourth);
+  }
+
+  .button-content .white:hover {
+    background: var(--fourth);
+    color: var(--third);
+  }
+
+  .groups {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5em 3em;
+    gap: 1em;
+    align-items: center;
+    color: var(--second);
+    flex-shrink: 0;
+    margin: auto;
+  }
+
+  .groups:nth-child(even) {
+    background-color: var(--third);
+    flex-direction: row-reverse;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0;
+    max-width: 30vw;
+  }
+
+  .groups img {
+    width: 50vw;
+  }
+
+  .group h1 {
+    font-size: 2em;
+    margin: 0 auto;
+  }
+
+  .group-four {
+    text-align: center;
+    gap: 1.5em;
+  }
+
+
+  .group-four h1 {
+    font-family: var(--font-primary);
+    font-size: 2.5em;
+    font-weight: 400;
+    max-width: 50vw;
+    margin: auto;
+    text-align: center;
+  }
+
+
+}
+
+/* Discord Home Page Desktop */
+
+@media screen and (min-width:1140px) {
+
+  .header-content h1 {
+    font-size: 3.5em;
+    width: 350px;
+
+  }
+
+  .group {
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    width: 50vw;
+
+  }
+
+  .group h1 {
+    font-size: 2.5em;
+  }
+
+  .group-four {
+    width: 75vw;
+    gap: 1.5em;
+    margin: auto;
+  }
+
+  .group-four h1 {
+    font-size: 3em;
+    max-width: 50vw;
+  }
+
+  .group-four p {
+    text-align: center;
+    line-height: 1.75em;
+  }
+}

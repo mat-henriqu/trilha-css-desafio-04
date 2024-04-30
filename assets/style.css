@@ -1,0 +1,125 @@
+@import url('responsive.css');
+
+/* Main */
+:root {
+  --primary: #fff;
+  --second: #23272A;
+  --third: #f6f6f6;
+  --fourth: #6e4a9b;
+  --font-primary: 'Luckiest Guy';
+  --font-second: 'Open Sans';
+  --background-image: url('./images/header-background.png');
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: var(--font-second);
+
+}
+
+p {
+  font-family: var(--font-second);
+  text-align: start;
+  margin: 0;
+}
+
+/* iPhone 14 Pro Max */
+
+@media screen and (min-width:325px) {
+  header {
+    background: var(--background-image) center bottom / cover no-repeat #31099e;
+    width: 100%;
+    height: auto;
+    color: var(--primary);
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 0 1.5em;
+    margin: 70px 0 50px;
+
+  }
+
+  .header-content h1 {
+    font-family: var(--font-primary);
+    font-size: 2em;
+    width: 275px;
+    color: var(--primary);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: start;
+  }
+
+  .header-content p {
+    justify-content: center;
+  }
+
+  .button-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0;
+  }
+
+  .button-content button {
+    width: 80vw;
+    font-size: 1em;
+    padding: .75em 1.5em;
+    border-radius: 3.5em;
+    border: none;
+    margin: auto;
+    transition: .5s ease-in-out;
+  }
+
+  .button-content .white {
+    background-color: var(--primary);
+    color: var(--second);
+  }
+
+  .button-content .black {
+    background-color: var(--second);
+    color: var(--primary);
+  }
+
+  .groups {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 1.5em;
+    gap: 1.68em;
+    align-items: center;
+    color: var(--second);
+  }
+
+  .groups:nth-child(even) {
+    background-color: var(--third);
+  }
+
+  .groups img {
+    max-width: 100%;
+  }
+
+  .group-four h1 {
+    font-family: var(--font-primary);
+    font-size: 2em;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  .group-four img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  footer {
+    display: flex;
+    place-content: center;
+    background-color: var(--second);
+    padding: 2em 0;
+
+  }
+}
